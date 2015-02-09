@@ -36,6 +36,15 @@ def translate():
 
 	return render_template("pirate_translate.html", input_sentence=input_sentence, result_sentence= result_sentence)
 
+@app.route('/playagain')
+def game_again():
+	response = request.args.get("game")
+
+	if response == "yes":
+		return render_template("pirate_game.html")
+	if response == "no":
+		return render_template("pirate_bye.html")
+
 
 if __name__ == "__main__":
 	app.run()
