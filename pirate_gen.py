@@ -19,10 +19,8 @@ def translate():
 
 	pirate_dict = {"sir": "matey", "hotel" : "fleabag inn", "student" : "swabbie", "boy" : "matey", "madam" : "proud beauty", "professor": "foul blaggart", "restaurant" : "galley", "your" : "yer", "excuse" : "arr", "students" : "swabbies", "are" : "be", "lawyer" : "foul blaggart", "the" : "th'", "restroom" : "head", "my" : "me", "hello": "avast", "is" : "be", "man" : "matey"}
 
-	# pirate_dict = {"sir": "matey", "hotel": "fleabag inn"}
-
+	#FIXME, can currently only accept words with spaces
 	split_sentence = input_sentence.split()
-	print split_sentence
 
 	result_list = []
 	for word in split_sentence:

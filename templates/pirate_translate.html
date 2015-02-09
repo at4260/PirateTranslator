@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pirate Translation</title>
-    <link rel="stylesheet" href="../static/pirate_format.css">
+    <title class="pageheaders">Pirate Translation</title>
+    <link rel="stylesheet" href="../static/pirate_style.css">
+    <style>
+    	body {
+    		background-image: url("../static/background.jpg");
+    		background-size: cover;
+    	}
+	</style>
 </head>
 <body>
-	<p>Translated:</p>
-	<p>{{input_sentence}}</p>
-	<p>Result:</p>
-    <p>{{result_sentence}}</p>
+	<p class="text">Translated:</p>
+	<p class="text">{{input_sentence}}</p>
+	<p class="text">Result:</p>
+    <p class="text">{{result_sentence}}</p>
     <br>
     <form action="/playagain">
-    	<p>Want to play again?</p>
-        <label><input type="radio" name="game" value="yes">Sure!</label>
-        <label><input type="radio" name="game" value="no">No way.</label>
+    	<p class="text">Want to play again?</p>
+        <label class="text"><input type="radio" name="game" value="yes">Sure!</label>
+        <label class="text"><input type="radio" name="game" value="no">No way.</label>
         <br>
         <input type="submit" value="Submit">
 </body>
